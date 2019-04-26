@@ -2,13 +2,13 @@ import React from 'react';
 import { StyleSheet, Text, View, ImageBackground,Button, Image, TouchableOpacity } from 'react-native';
 import {Font} from 'expo';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
-import MainScreen from './MainScreen';
-import game_p1 from './game_p1';
-import base_screen from './base_screen';
-import live_game_screen from './live_game_screen';
-import score_screen from './highscores';
-import auto_selector from './auto_select';
-import info_screen from './infoPage';
+import MainScreen from './Screens/MainScreen';
+import game_p1 from './Screens/game_begin';
+import base_screen from './Screens/base_screen';
+import live_game_screen from './Screens/live_game_screen';
+import score_screen from './Screens/highscores';
+import auto_selector from './Screens/auto_select';
+import info_screen from './Screens/infoPage';
 
 const MainNav = createStackNavigator({
   Home: MainScreen,
