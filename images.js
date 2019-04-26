@@ -1,5 +1,10 @@
 
 const images = {
+    game_defaults:{
+        default1: require('./assets/wrench.png'),
+        default2: require('./assets/hammer.png'),
+        default3: require('./assets/saw.png')
+    },
     headers: {
         gp1: require('./assets/choice1.png'), 
         gp2: require('./assets/choice2.png')
@@ -22,22 +27,29 @@ const images = {
         container: require('./assets/techBox.png'),
         choice1: {
             name: "Lower Body",
-            shortLegs: { 
-                icon: require('./assets/shortLegs.png'),
+            option0:{
+                icon: require('./assets/sil_legs.png'),
+                cost: 0,
+                time: 0,
+                reliability: 0,
+                appeal: 0
+            },
+            option1: { 
+                icon: require('./assets/L1 [Legs].png'),
                 cost: 500,
                 time: .1,
                 reliability:.3,
                 appeal: .2
             },
-            regLegs:{ 
-                icon: require('./assets/niceLegs.png'),
+            option2:{ 
+                icon: require('./assets/L2 [Legs].png'),
                 cost: 1500,
                 time: .3,
                 reliability:.4,
                 appeal: .6 
             },
-            wheel:{ 
-                icon:require('./assets/wheel.png'),
+            option3:{ 
+                icon:require('./assets/L3 [Legs].png'),
                 cost: 3500,
                 time: .6,
                 reliability:.7,
@@ -46,22 +58,29 @@ const images = {
         },
         choice2:{
             name: "Torso",
-            body1: { 
-                icon: require('./assets/body_1.png'),
+            option0:{
+                icon: require('./assets/sil_body.png'),
+                cost: 0,
+                time: 0,
+                reliability: 0,
+                appeal: 0
+            },
+            option1: { 
+                icon: require('./assets/L1 [Body]-01.png'),
                 cost: 500,
                 time: .2,
                 reliability:.3,
                 appeal: .2
             },
-            body2:{ 
-                icon: require('./assets/body_2.png'),
+            option2:{ 
+                icon: require('./assets/L2 [Body]-01.png'),
                 cost: 1500,
                 time: .4,
                 reliability:.4,
                 appeal: 6 
             },
-            body3:{ 
-                icon:require('./assets/body_3.png'),
+            option3:{ 
+                icon:require('./assets/L3 [Body]-01.png'),
                 cost: 2500,
                 time: .6,
                 reliability:.9,
@@ -70,22 +89,29 @@ const images = {
         },
         choice3:{
             name: "head",
-            head1: { 
-                icon: require('./assets/head1.png'),
+            option0:{
+                icon: require('./assets/sil_head.png'),
+                cost: 0,
+                time: 0,
+                reliability: 0,
+                appeal: 0
+            },
+            option1: { 
+                icon: require('./assets/L1 [Head].png'),
                 cost: 1500,
                 time: .2,
                 reliability:.3,
                 appeal: .2
             },
-            head2:{ 
-                icon: require('./assets/head2.png'),
+            option2:{ 
+                icon: require('./assets/L2 [Head].png'),
                 cost: 2500,
                 time: .4,
                 reliability:.4,
                 appeal: .6 
             },
-            head3:{ 
-                icon:require('./assets/head3.png'),
+            option3:{ 
+                icon:require('./assets/L3 [Head].png'),
                 cost: 5500,
                 time: .6,
                 reliability:.9,
